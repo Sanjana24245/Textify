@@ -36,10 +36,11 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({ friends, session, sidebar
         <Link
           href='/dashboard'
           className={buttonVariants({ variant: 'ghost' })}>
-          <Icons.Logo className='h-6 w-auto text-indigo-600' />
+          <span className="text-xl  border-[2px] p-3 font-bold ">Textify</span>
+
         </Link>
         <Button onClick={() => setOpen(true)} className='gap-4'>
-          Menu <Menu className='h-6 w-6' />
+         <Menu className='h-6 w-6' />
         </Button>
       </div>
       <Transition.Root show={open} as={Fragment}>
