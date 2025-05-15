@@ -1,56 +1,19 @@
-# 💬 Next.js Chat Application
+# Textify
 
-A full-featured real-time chat application built with **Next.js**, **TypeScript**, and **TailwindCSS**. This app allows users to add friends by email, send/receive friend requests, and chat in real time with blazing-fast performance via **Redis**.
-
----
+Textify is a real-time chat application built with the MERN stack (MongoDB, Express, React, Node.js) and Tailwind CSS using WebSockets for instant messaging.
 
 ## 🚀 Features
 
-- 🔁 **Realtime Messaging** — Powered by WebSockets for instant communication.
-- 👥 **Friend System** — Add friends and manage friend requests via email.
-- ⚡ **High Performance** — Optimized queries using **Redis** for low latency.
-- 💻 **Responsive UI** — Built with TailwindCSS to work seamlessly across all devices.
-- 🔐 **Secure Routing** — Protects sensitive pages and routes for authenticated users.
-- 🔑 **Google Authentication** — Sign in easily using your Google account.
-- 🛠 **TypeScript Support** — Ensures safer and predictable code with static typing.
+- 💬 Real-time messaging with WebSockets
+- 👤 User authentication and roles (Admin, Vendor, Employee, Candidate)
+- 📁 File sharing (images, PDFs, documents)
+- 📡 Persistent chat history
+- 🧑‍💼 Admin-initiated conversations only
+- 🎨 Responsive UI with Tailwind CSS
 
----
+## 📦 Tech Stack
 
-## 🧰 Tech Stack
-
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Language**: TypeScript
-- **Styling**: TailwindCSS
-- **Authentication**: NextAuth with Google
-- **Real-time**: WebSockets / Pusher / Redis PubSub (choose your stack)
-- **Database**: Redis (for chat performance)
-
----
-
-## 🎨 UI & Styling Tools
-
-- 🎨 **TailwindCSS** — Utility-first CSS framework
-- 🎯 **clsx** — Conditional className merging
-- 🧩 **tailwind-merge** — Merge Tailwind classes safely
-- 🎭 **class-variance-authority (CVA)** — Create reusable Tailwind class variants
-- 🧱 **Lucide Icons** — Clean and modern icons
-
----
-
-## 🧪 Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/your-chat-app.git
-
-# Navigate to the project directory
-cd your-chat-app
-
-# Install dependencies
-npm install
-
-# Create .env.local and add your environment variables
-cp .env.example .env.local
-
-# Run the development server
-npm run dev
+- **Frontend:** React + Vite + Tailwind CSS
+- **Backend:** Node.js + Express + MongoDB
+- **Real-time:** socket.io
+- **Auth:** JWT-based (no localStorage used)
